@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        max-width: 600px;
+        margin-top: 50px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .image-container {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 30px;
+      }
+      .image-placeholder {
+        font-size: 24px;
+        color: #ccc;
+      }
+      .form-group input,
+      .form-group button {
+        border-radius: 5px;
+      }
+      .form-group button {
+        margin-right: 10px;
+      }
+      .formcontainer {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="text-center">Event 1</h3>
+      <p class="text-center">Number of available seats: 23</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="image-container">
+            <span class="image-placeholder">Image</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <form class="formcontainer">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Phone No." />
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Number of seats"
+                  min="1"
+                  max="23"
+                  value="2"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  ></button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">5</a>
+                    <a class="dropdown-item" href="#">6</a>
+                    <a class="dropdown-item" href="#">7</a>
+                    <a class="dropdown-item" href="#">8</a>
+                    <a class="dropdown-item" href="#">9</a>
+                    <a class="dropdown-item" href="#">10</a>
+                    <a class="dropdown-item" href="#">11</a>
+                    <a class="dropdown-item" href="#">12</a>
+                    <a class="dropdown-item" href="#">13</a>
+                    <a class="dropdown-item" href="#">14</a>
+                    <a class="dropdown-item" href="#">15</a>
+                    <a class="dropdown-item" href="#">16</a>
+                    <a class="dropdown-item" href="#">17</a>
+                    <a class="dropdown-item" href="#">18</a>
+                    <a class="dropdown-item" href="#">19</a>
+                    <a class="dropdown-item" href="#">20</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name of Attendee 2"
+              />
+            </div>
+            <div class="form-group text-right">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
